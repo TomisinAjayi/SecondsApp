@@ -1,7 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
 import {COLORS} from '../constants/colors';
 import {FONTS} from '../constants/typography';
+import {horizontalScale, verticalScale} from '../constants/metrics';
 
 const Radio = ({label, checked, onPress}) => (
   <TouchableOpacity onPress={onPress}>
@@ -21,8 +22,8 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   unchecked: {
-    width: 16,
-    height: 16,
+    width: horizontalScale(16),
+    height: verticalScale(16),
     borderRadius: 12,
     borderWidth: 1,
     borderColor: COLORS.black,
@@ -30,8 +31,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   checked: {
-    width: 10,
-    height: 10,
+    width: horizontalScale(10),
+    height: verticalScale(10),
     borderRadius: 6,
     backgroundColor: COLORS.black,
   },
