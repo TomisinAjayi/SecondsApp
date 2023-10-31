@@ -4,7 +4,7 @@ This is a new [**React Native**](https://reactnative.dev) project, bootstrapped 
 First, you'll need to clone the application.
 You can run the line below in your terminal
 ```bash
-git clone ""
+git clone "https://github.com/TomisinAjayi/SecondsApp.git"
 ```
 
 Then move into the folder:
