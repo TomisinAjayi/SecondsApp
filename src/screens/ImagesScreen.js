@@ -148,6 +148,7 @@ const ImagesScreen = () => {
           numColumns={3}
           renderItem={({item}) => (
             <ImageListComponent
+              disabled={!checked}
               onPress={() => toggleImageSelection(item)}
               image={images[item]}
               selected={selectedImages[item]}

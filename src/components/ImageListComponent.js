@@ -4,9 +4,19 @@ import {horizontalScale, verticalScale} from '../constants/metrics';
 import {COLORS} from '../constants/colors';
 import {FONTS} from '../constants/typography';
 
-const ImageListComponent = ({checked, onPress, image, selected, number}) => {
+const ImageListComponent = ({
+  disabled,
+  checked,
+  onPress,
+  image,
+  selected,
+  number,
+}) => {
   return (
-    <TouchableOpacity onPress={onPress} style={styles.imageContainer}>
+    <TouchableOpacity
+      disabled={disabled}
+      onPress={onPress}
+      style={styles.imageContainer}>
       <Image source={image} style={styles.image} />
       {checked && <View style={styles.selectionCircle} />}
       {selected && checked && (
