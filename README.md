@@ -1,5 +1,22 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
+# Introduction
+This is a project for a developer test on React Native from seconds.
+
+### Features
+1. Image selection is initially inactive until "Select Multiple" is clicked, and the "Next" button remains inactive.
+2. Once "Select Multiple" is clicked, you can now select images by clicking on them, and a circle appears in the top right corner.
+3. When an image is selected, a number appears in the center of the circle, indicating the order in which the image was chosen.
+4. When an image is selected, the "Next" button becomes disabled.
+5. If an image is deselected, the number is removed, but the order remains intact.
+6. The images you've selected are displayed at the bottom of the screen.
+7. You can remove or deselect selected images using a button attached to them at the bottom.
+   
+### Technologies Used
+1. React Native
+2. JavaScript
+3. StyleSheet in React Native for styling
+
 # Getting Started
 First, you'll need to clone the application.
 You can run the line below in your terminal
